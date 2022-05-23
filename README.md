@@ -1,1 +1,1 @@
-# golang_clean_arch
+# main project full cycle course
