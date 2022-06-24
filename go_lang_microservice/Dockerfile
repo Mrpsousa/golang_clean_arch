@@ -29,6 +29,6 @@ RUN apk add --update --upgrade curl python unzip bash gcc g++ scons && \
     cp -a ${BENTO4_PATH}/Source/Python/wrappers/. ${BENTO4_PATH}/bin
 
 WORKDIR /go/src
-
+COPY "bucket-credential.json" /go/src 
 #vamos mudar para o endpoint correto. Usando top apenas para segurar o processo rodando
 ENTRYPOINT [ "top" ]
